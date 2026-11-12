@@ -1,0 +1,9 @@
+markdown
+knowledge-graph
+ontology
+notes
+note-taking
+cli
+python
+graph
+zettelkasten

@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "name": "Agents",
+      "mentions": 5,
+      "files": [
+        "agents.md",
+        "ontology.md",
+        "python.md"
+      ]
+    },
+    {
+      "name": "Graphs",
+      "mentions": 5,
+      "files": [
+        "agents.md",
+        "graphs.md",
+        "ontology.md",
+        "python.md"
+      ]
+    },
+    {
+      "name": "Ontology",
+      "mentions": 2,
+      "files": [
+        "graphs.md",
+        "ontology.md"
+      ]
+    },
+    {
+      "name": "Python",
+      "mentions": 6,
+      "files": [
+        "agents.md",
+        "graphs.md",
+        "python.md"
+      ]
+    },
+    {
+      "name": "Zettelkasten",
+      "mentions": 1,
+      "files": [
+        "misc.md"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "Agents",
+      "target": "Graphs",
+      "label": "build",
+      "file": "agents.md"
+    },
+    {
+      "source": "Agents",
+      "target": "Python",
+      "label": "run-on",
+      "file": "agents.md"
+    },
+    {
+      "source": "Graphs",
+      "target": "Ontology",
+      "label": "enable",
+      "file": "graphs.md"
+    },
+    {
+      "source": "Ontology",
+      "target": "Agents",
+      "label": "describes",
+      "file": "ontology.md"
+    },
+    {
+      "source": "Python",
+      "target": "Agents",
+      "label": "powers",
+      "file": "python.md"
+    },
+    {
+      "source": "Python",
+      "target": "Graphs",
+      "label": "uses",
+      "file": "python.md"
+    }
+  ]
+}
